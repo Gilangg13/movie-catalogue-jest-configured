@@ -54,12 +54,13 @@ const itActsAsFavoriteMovieModel = (favoriteMovie) => {
     favoriteMovie.putMovie({ id: 3, title: "film abc" });
     favoriteMovie.putMovie({ id: 4, title: "ini mah film abcd" });
 
-    expect(await favoriteMovie.searchMovie("film a")).toEqual([
+    expect(await favoriteMovie.searchMovies("film a")).toEqual([
       { id: 1, title: "film a" },
       { id: 3, title: "film abc" },
-      { id: 4, title: "film abcd" },
+      { id: 4, title: "ini mah film abcd" },
     ]);
   });
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export { itActsAsFavoriteMovieModel };

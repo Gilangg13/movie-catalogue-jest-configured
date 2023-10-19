@@ -37,7 +37,7 @@ describe("Showing all favorite movies", () => {
       ).toEqual(1);
     });
 
-    fit("should ask for the favorite movies", () => {
+    it("should ask for the favorite movies", () => {
       const favoriteMovies = {
         getAllMovies: jest.fn().mockImplementation(() => []),
       };

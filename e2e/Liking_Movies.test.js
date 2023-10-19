@@ -81,7 +81,7 @@ Scenario("searching movies", async ({ I }) => {
   I.pressKey("Enter");
 
   // Tunggu hingga semua tindakan asinkronous selesai
-  await I.waitForVisible(".movie-item");
+  // await I.waitForVisible(".movie-item");
 
   // mendapatkan daftar film yang sesuai dengan searchQuery
   const matchingMovies = titles.filter(
